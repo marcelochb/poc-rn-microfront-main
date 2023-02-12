@@ -1,18 +1,26 @@
-import {NavigationContainer} from '@react-navigation/native';
+import {JorneyOneStack} from '@poc/jorneyone';
+import {NavigationContainer, useNavigation} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import React from 'react';
 import {SafeAreaView, StyleSheet, Text, TouchableOpacity} from 'react-native';
 function Home(): JSX.Element {
+  const navigation = useNavigation<any>();
   return (
     <SafeAreaView style={styles.container}>
-      <TouchableOpacity style={styles.button}>
-        <Text style={styles.label}>Jornada 1</Text>
+      <TouchableOpacity
+        style={styles.button}
+        onPress={() => {
+          navigation.navigate('JorneyStack', {
+            screen: 'Jorney One',
+          });
+        }}>
+        <Text style={styles.label}>Jorney 1</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.button}>
-        <Text style={styles.label}>Jornada 2</Text>
+        <Text style={styles.label}>Jorney 2</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.button}>
-        <Text style={styles.label}>Jornada 3</Text>
+        <Text style={styles.label}>Jorney 3</Text>
       </TouchableOpacity>
     </SafeAreaView>
   );
@@ -25,6 +33,7 @@ function App(): JSX.Element {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="JorneyStack" component={JorneyOneStack} />
       </Stack.Navigator>
     </NavigationContainer>
   );
