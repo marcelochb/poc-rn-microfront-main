@@ -3,11 +3,31 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
-    "lint": "eslint .",
+    "android": "npx react-native run-android",
+    "android:release": "npx react-native run-android --variant=release",
+    "android-clean-build": "cd android && ./gradlew clean && cd ..",
+    "android-build-debug": "cd android && ./gradlew assembleDebug && cd ..",
+    "pod": "cd ios && pod install && cd ..",
+    "test": "jest",
     "start": "react-native start",
-    "test": "jest"
+    "ios": "npx react-native run-ios",
+    "run:ios:rebuild": "yarn rebuild:ios && yarn ios",
+    "run:ios:nodemodules": "yarn rebuild:nodemodules && yarn ios",
+    "rebuild:ios": "yarn clean:nodemodules && yarn clean:ios && yarn build:ios",
+    "clean:ios": "rm -rf ios/build && rm -rf ios/Pods && yarn clean:ios:pods",
+    "clean:ios:pods": "cd ios && pod deintegrate && pod cache clean --all && cd ..",
+    "build:ios": "yarn && cd ios/ && pod install && cd ..",
+    "rebuild:nodemodules": "yarn clean:nodemodules && yarn build:nodemodules",
+    "clean:nodemodules": "rm -rf node_modules && rm -f yarn.lock",
+    "build:nodemodules": "yarn install",
+    "run:android": "yarn rebuild:android && yarn android",
+    "rebuild:android": "yarn clean:android && yarn build:android",
+    "clean:android": "rm -rf android/app/build && rm -rf android/build && rm -rf android/.gradle && rm -rf android/build.gradle-e",
+    "build:android": "yarn && npx jetifier",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "rebuild": "yarn clean && yarn build",
+    "clean": "yarn clean:nodemodules && yarn clean:android && yarn clean:ios",
+    "build": "yarn && yarn build:android && yarn build:ios"
   },
   "dependencies": {
     "@react-navigation/native": "^6.1.3",
@@ -15,8 +35,7 @@
     "react": "18.2.0",
     "react-native": "0.71.2",
     "react-native-safe-area-context": "^4.5.0",
-    "react-native-screens": "^3.19.0",
-    "@poc/jorneyone":"*"
+    "react-native-screens": "^3.19.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
