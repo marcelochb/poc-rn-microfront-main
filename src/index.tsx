@@ -1,12 +1,15 @@
-import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
+import {NavigationContainer} from '@react-navigation/native';
+import {SafeAreaProvider} from 'react-native-safe-area-context';
 import {Routes} from './routes';
 
 const Index = () => {
   return (
-    <NavigationContainer>
-      <Routes />
-    </NavigationContainer>
+    <SafeAreaProvider>
+      <NavigationContainer>
+        <Routes />
+      </NavigationContainer>
+    </SafeAreaProvider>
   );
 };
 

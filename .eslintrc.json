@@ -1,29 +1,40 @@
 {
   "env": {
-      "es2021": true
+    "es2021": true,
+    "jest": true
   },
   "extends": [
-      "plugin:react/recommended",
-      "airbnb",
-      "plugin:@typescript-eslint/recommended"
+    "plugin:react/recommended",
+    "airbnb",
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
   ],
   "globals": {
-      "__DEV__": "readonly"
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly",
+    "__DEV__": "readonly"
   },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-      "ecmaFeatures": {
-          "jsx": true
-      },
-      "ecmaVersion": 12,
-      "sourceType": "module"
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
   },
   "plugins": [
-      "react",
-      "react-hooks",
-      "@typescript-eslint"
+    "react",
+    "react-hooks",
+    "@typescript-eslint",
+    "prettier"
   ],
   "rules": {
+    "no-implicit-dependencies": [
+      "on",
+      "dev"
+    ],
+    "prettier/prettier": "error",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "react/jsx-filename-extension": [
@@ -34,6 +45,7 @@
         ]
       }
     ],
+    "import/prefer-default-export": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
@@ -41,12 +53,7 @@
         "ts": "never",
         "tsx": "never"
       }
-    ],
-    "no-use-before-define": "off",
-    "@typescript-eslint/no-use-before-define": [
-      "error"
-    ],
-    "react/react-in-jsx-scope": "off"
+    ]
   },
   "settings": {
     "import/resolver": {
