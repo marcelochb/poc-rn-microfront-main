@@ -12,9 +12,9 @@ export const Home = () => {
       labelFirstButton="Pagamentos"
       onPressFirstButton={() => navigation.navigate("PaymentStack", {screen: "PaymentList"})}
       labelSecondButton="Empréstimos"
-      onPressSecondButton={() => navigation.navigate("PaymentStack", {screen: "PaymentDetail"})}
+      onPressSecondButton={() => navigation.navigate("LoanStack", {screen: "LoanList"})}
       labelThirdButton="Pix"
-      onPressThirdButton={() => navigation.navigate("PaymentStack", {screen: "PaymentList"})}
+      onPressThirdButton={() => navigation.navigate("PixStack", {screen: "PixList"})}
     />
   );
 };

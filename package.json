@@ -31,6 +31,8 @@
   },
   "dependencies": {
     "@poc/payment": "*",
+    "@poc/loan":"*",
+    "@poc/pix":"*",
     "@poc/templates": "*",
     "@poc/ui": "*",
     "@react-navigation/bottom-tabs": "^6.5.5",
