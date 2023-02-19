@@ -30,8 +30,10 @@
     "build": "yarn && yarn build:android && yarn build:ios"
   },
   "dependencies": {
+    "@poc/payment": "*",
     "@poc/templates": "*",
     "@poc/ui": "*",
+    "@react-navigation/bottom-tabs": "^6.5.5",
     "@react-navigation/native": "^6.1.3",
     "@react-navigation/native-stack": "^6.9.9",
     "react": "18.2.0",
