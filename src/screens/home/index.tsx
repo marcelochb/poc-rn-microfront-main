@@ -2,7 +2,7 @@ import React from 'react';
 import { TemplateMainHome } from '@poc/templates';
 import { ThemeBase } from '@poc/theme';
 import { useNavigation } from '@react-navigation/native';
-import { LOAN_NAVIGATORS } from '@poc/loan';
+import { LOAN_NAVIGATORS } from '@poc/tools';
 import { PAYMENT_NAVIGATORS } from '@poc/payment';
 import { PIX_NAVIGATORS } from '@poc/pix';
 
