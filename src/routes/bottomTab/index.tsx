@@ -11,7 +11,7 @@ export const BottomTab = () => {
     <Tab.Navigator>
       <Tab.Screen name='Inicio' component={Home} />
       <Tab.Screen name='Pagamentos' component={PaymentStack} />
-      <Tab.Screen name={LOAN_NAVIGATORS.title} component={LoanStack} />
+      <Tab.Screen name={LOAN_NAVIGATORS.title} component={LoanStack} options={{headerShown: false}} />
       <Tab.Screen name='Pix' component={PixStack} />
     </Tab.Navigator>
   )

@@ -15,7 +15,7 @@ export const Home = () => {
       labelFirstButton="Pagamentos"
       onPressFirstButton={() => navigation.navigate(PAYMENT_NAVIGATORS.stack, {screen: PAYMENT_NAVIGATORS.screens.list})}
       labelSecondButton="Empréstimos"
-      onPressSecondButton={() => navigation.navigate(LOAN_NAVIGATORS.stack, {screen: LOAN_NAVIGATORS.screens.list})}
+      onPressSecondButton={() => navigation.navigate(LOAN_NAVIGATORS.stack)}
       labelThirdButton="Pix"
       onPressThirdButton={() => navigation.navigate(PIX_NAVIGATORS.stack, {screen: PIX_NAVIGATORS.screens.list})}
     />

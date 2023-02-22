@@ -13,7 +13,7 @@ export const Routes = () => {
     <Stack.Navigator>
       <Stack.Screen name="BottomTab" component={BottomTab} options={{headerShown:false}} />
       <Stack.Screen name={PAYMENT_NAVIGATORS.stack} component={PaymentStack} options={{title:PAYMENT_NAVIGATORS.title}} />
-      <Stack.Screen name={LOAN_NAVIGATORS.stack} component={LoanStack} options={{title:LOAN_NAVIGATORS.title}} />
+      <Stack.Screen name={LOAN_NAVIGATORS.stack} component={LoanStack} options={{title:LOAN_NAVIGATORS.title, headerShown: false}}  />
       <Stack.Screen name={PIX_NAVIGATORS.stack} component={PixStack} options={{title:PIX_NAVIGATORS.title}} />
     </Stack.Navigator>
   );
