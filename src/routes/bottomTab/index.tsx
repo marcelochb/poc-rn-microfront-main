@@ -5,13 +5,18 @@ import { PaymentStack } from '@poc/payment';
 import { LoanStack } from '@poc/loan';
 import { PixStack } from '@poc/pix';
 import { LOAN_NAVIGATORS } from '@poc/loan';
+import { HomeStack } from '../stack/home';
 const Tab = createBottomTabNavigator();
 export const BottomTab = () => {
   return (
     <Tab.Navigator>
-      <Tab.Screen name='Inicio' component={Home} />
+      <Tab.Screen name='Inicio' component={HomeStack} options={{headerShown:false}} />
       <Tab.Screen name='Pagamentos' component={PaymentStack} />
-      <Tab.Screen name={LOAN_NAVIGATORS.title} component={LoanStack} options={{headerShown: false}} />
+      <Tab.Screen
+        name={LOAN_NAVIGATORS.stack.title}
+        component={LoanStack}
+        options={{headerShown: false}}
+      />
       <Tab.Screen name='Pix' component={PixStack} />
     </Tab.Navigator>
   )
