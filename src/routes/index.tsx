@@ -17,7 +17,7 @@ export const Routes = () => {
         options={{headerShown:false, headerBackTitleVisible: false}}
       />
       <Stack.Screen name={PAYMENT_NAVIGATORS.stack} component={PaymentStack} options={{title:PAYMENT_NAVIGATORS.title}} />
-      <Stack.Screen name={LOAN_NAVIGATORS.stack.name} component={LoanStack} options={{headerShown: false}}/>
+      <Stack.Screen name={LoanStack.stack.name} component={LoanStack.stack.component} options={{headerShown: false}}/>
       <Stack.Screen name={PIX_NAVIGATORS.stack} component={PixStack} options={{title:PIX_NAVIGATORS.title}} />
     </Stack.Navigator>
   );
