@@ -4,7 +4,6 @@ import { Home } from '../../screens';
 import { PaymentStack } from '@poc/payment';
 import { LoanStack } from '@poc/loan';
 import { PixStack } from '@poc/pix';
-import { LOAN_NAVIGATORS } from '@poc/tools';
 import { HomeStack } from '../stack/home';
 const Tab = createBottomTabNavigator();
 export const BottomTab = () => {
@@ -13,7 +12,7 @@ export const BottomTab = () => {
       <Tab.Screen name='Inicio' component={HomeStack} options={{headerShown:false}} />
       <Tab.Screen name='Pagamentos' component={PaymentStack} />
       <Tab.Screen
-        name={LOAN_NAVIGATORS.stack.title}
+        name={LoanStack.stack.name}
         component={LoanStack.stack.component}
         options={{headerShown: false}}
       />

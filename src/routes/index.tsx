@@ -4,7 +4,6 @@ import { PaymentStack, PAYMENT_NAVIGATORS } from '@poc/payment';
 import { BottomTab } from './bottomTab';
 import { LoanStack } from '@poc/loan';
 import { PixStack, PIX_NAVIGATORS } from '@poc/pix';
-import { LOAN_NAVIGATORS } from '@poc/tools';
 
 const Stack = createNativeStackNavigator();
 

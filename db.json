@@ -1,20 +1,88 @@
 {
   "loan": [
-    { "id": "1", "name": "Antecipação de 13º salário", "type": "Pessoal", "amount": 13530.98 },
-    { "id": "2", "name": "Financiamento Imovel", "type": "Consignado", "amount": 280665.77 },
-    { "id": "3", "name": "Antecipar FTGS", "type": "FGTS", "amount": 7656.67 },
-    { "id": "4", "name": "Antecipação restituição de IR", "type": "Pessoal", "amount": 3543.32 }
+    {
+      "id": "1",
+      "name": "Antecipação de 13º salário",
+      "type": "Pessoal",
+      "amount": 13530.98
+    },
+    {
+      "id": "2",
+      "name": "Financiamento Imovel",
+      "type": "Consignado",
+      "amount": 280665.77
+    },
+    {
+      "id": "3",
+      "name": "Antecipar FTGS",
+      "type": "FGTS",
+      "amount": 7656.67
+    },
+    {
+      "id": "4",
+      "name": "Antecipação restituição de IR",
+      "type": "Pessoal",
+      "amount": 3543.32
+    }
   ],
   "payment": [
-    { "id": "1", "recipient": "Seguradora XYZ", "payer": "Marcelo Block", "dueDate": "10/05/2023", "amount": 235 },
-    { "id": "2", "recipient": "Lojas XYZ", "payer": "Marcelo Block", "dueDate": "10/05/2023", "amount": 535 },
-    { "id": "3", "recipient": "Cartão de Crédito", "payer": "Marcelo Block", "dueDate": "10/05/2023", "amount": 4335 },
-    { "id": "4", "recipient": "Seguro de Vida", "payer": "Marcelo Block", "dueDate": "10/05/2023", "amount": 148 },
-    { "id": "5", "recipient": "Plano de saúde", "payer": "Marcelo Block", "dueDate": "10/05/2023", "amount": 667 }
+    {
+      "id": "1",
+      "recipient": "Seguradora XYZ",
+      "payer": "Marcelo Block",
+      "dueDate": "10/05/2023",
+      "amount": 235
+    },
+    {
+      "id": "2",
+      "recipient": "Lojas XYZ",
+      "payer": "Marcelo Block",
+      "dueDate": "10/05/2023",
+      "amount": 535
+    },
+    {
+      "id": "3",
+      "recipient": "Cartão de Crédito",
+      "payer": "Marcelo Block",
+      "dueDate": "10/05/2023",
+      "amount": 4335
+    },
+    {
+      "id": "4",
+      "recipient": "Seguro de Vida",
+      "payer": "Marcelo Block",
+      "dueDate": "10/05/2023",
+      "amount": 148
+    },
+    {
+      "id": "5",
+      "recipient": "Plano de saúde",
+      "payer": "Marcelo Block",
+      "dueDate": "10/05/2023",
+      "amount": 667
+    }
   ],
   "pix": [
-    { "id": "1", "name": "Marcelo Block", "bank": "Banco X", "date": "20/04/2023", "amount": 235 },
-    { "id": "2", "name": "Marcelo Block", "bank": "Banco Y", "date": "20/04/2023", "amount": 235 },
-    { "id": "3", "name": "Marcelo Block", "bank": "Banco Z", "date": "20/04/2023", "amount": 235 }
+    {
+      "id": "1",
+      "name": "Marcelo Block",
+      "bank": "Banco X",
+      "date": "20/04/2023",
+      "amount": 235
+    },
+    {
+      "id": "2",
+      "name": "Marcelo Block",
+      "bank": "Banco Y",
+      "date": "20/04/2023",
+      "amount": 235
+    },
+    {
+      "id": "3",
+      "name": "Marcelo Block",
+      "bank": "Banco Z",
+      "date": "20/04/2023",
+      "amount": 235
+    }
   ]
 }
