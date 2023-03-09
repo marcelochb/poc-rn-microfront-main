@@ -1,5 +1,5 @@
 # POC Main App da arquitetura de microfronts
-  Com o objetivo de paralelizar e facilitar a organização de grandes projetos para aplicações mobile.
+  Com o objetivo de paralelizar e facilitar a organização de grandes projetos para aplicações mobile, foi criado um POC (prove of concept) com uma aplicação principal, microfronts de jornadas dos modulos (pagamentos, empréstimo e pix) e packages de ferramentas para auxiliar na infraestrutura.
 
 ### Tecnologias usadas
 
