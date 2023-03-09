@@ -6,6 +6,8 @@
 - React Native
 - Typescript
 - React-Navigation
+- Tsyringe (inject dependency to clean architecture)
+- Axios
 
 ## Estrutura do projeto
 
