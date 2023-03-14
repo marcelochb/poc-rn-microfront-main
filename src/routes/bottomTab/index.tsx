@@ -14,7 +14,7 @@ export const BottomTab = () => {
       <Tab.Screen
         name={LoanStack.stack.name}
         component={LoanStack.stack.component}
-        options={{headerShown: false}}
+        options={{headerShown: false, unmountOnBlur:true}}
       />
       <Tab.Screen name='Pix' component={PixStack} />
     </Tab.Navigator>
