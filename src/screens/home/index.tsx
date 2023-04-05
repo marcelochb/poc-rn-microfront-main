@@ -26,25 +26,9 @@ export const Home = () => {
       onPressSecondButton={() => navigation.navigate(LoanStack.initialRoute)}
       labelThirdButton="Pix"
       onPressThirdButton={() => navigation.navigate(PIX_NAVIGATORS.stack, {screen: PIX_NAVIGATORS.screens.list})}
+      isChecked={theme.name == 'Midway'}
+      onClickMidway={() => dispatch(changeTheme(ThemeBase.Midway))}
+      onClickRiachuelo={() => dispatch(changeTheme(ThemeBase.Riachuelo))}
     />
-  // <PageWrapper theme={theme}>
-  //   <Buttons.Base
-  //     label='Increment'
-  //     theme={theme}
-  //     onPress={() => dispatch(changeTheme(ThemeBase.Midway))}
-  //   />
-  //   <Texts.Title theme={theme}>Tema</Texts.Title>
-  //   <Buttons.Base
-  //     label='Decrement'
-  //     theme={theme}
-  //     onPress={() => dispatch(changeTheme(ThemeBase.Riachuelo))}
-  //   />
-  //   <Buttons.Link
-  //     label='Decrement'
-  //     theme={theme}
-  //     IconSVG={IconPlus}
-  //     onPress={() => dispatch(changeTheme(ThemeBase.Riachuelo))}
-  //   />
-  // </PageWrapper>
   );
 };
