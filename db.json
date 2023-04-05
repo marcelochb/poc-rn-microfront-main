@@ -65,21 +65,21 @@
   "pix": [
     {
       "id": "1",
-      "name": "Marcelo Block",
+      "name": "João",
       "bank": "Banco X",
       "date": "20/04/2023",
       "amount": 235
     },
     {
       "id": "2",
-      "name": "Marcelo Block",
+      "name": "José",
       "bank": "Banco Y",
       "date": "20/04/2023",
       "amount": 235
     },
     {
       "id": "3",
-      "name": "Marcelo Block",
+      "name": "Maria",
       "bank": "Banco Z",
       "date": "20/04/2023",
       "amount": 235
