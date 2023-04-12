@@ -19,7 +19,7 @@ Projeto
   - actions => Ações referente as telas
   - flows => Fluxos de testes
   - screens => Telas e seus componentes
-- packages
+- packages => Microfronts e Package-tool
   - [core =>](https://github.com/marcelochb/poc-rn-microfront-core) Microfont com a regra de negócio (clean, testes unitários e estado global).
   - [interfaces =>](https://github.com/marcelochb/poc-rn-microfront-interfaces) Package-Tool com as interfaces de comunicação entre microfronts.
   - [loan =>](https://github.com/marcelochb/poc-rn-microfront-loan) Microfront com a jornada de empréstimo.
@@ -53,8 +53,11 @@ Rodar iOS
 - `npx react-native run-ios`
 
 ### Como rodar os teste automatizados
+- `brew update && brew install node`
+- `brew tap wix/brew;brew install applesimutils;`
+- `npm install -g detox-cli`
 - `detox build --configuration ios.sim.debug`
 - `detox test --configuration ios.sim.debug`
 
-### Como rodar os teste de unidade
+### Como rodar os teste de unidade (depende do package core)
 - `yarn test`
