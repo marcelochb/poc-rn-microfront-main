@@ -10,13 +10,21 @@ export const BottomTab = () => {
   return (
     <Tab.Navigator>
       <Tab.Screen name='Inicio' component={HomeStack} options={{headerShown:false}} />
-      <Tab.Screen name='Pagamentos' component={PaymentStack} />
       <Tab.Screen
-        name={LoanStack.stack.name}
+        name={PaymentStack.stack.title}
+        component={PaymentStack.stack.component}
+        options={{headerShown: false}}
+      />
+      <Tab.Screen
+        name={LoanStack.stack.title}
         component={LoanStack.stack.component}
         options={{headerShown: false, unmountOnBlur:true}}
       />
-      <Tab.Screen name='Pix' component={PixStack} />
+      <Tab.Screen
+        name={PixStack.stack.title}
+        component={PixStack.stack.component}
+        options={{headerShown: false}}
+      />
     </Tab.Navigator>
   )
 }
