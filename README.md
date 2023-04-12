@@ -8,11 +8,17 @@
 - React-Navigation
 - Tsyringe (inject dependency to clean architecture)
 - Axios
+- Jest (teste de unidade)
+- Detox (testes automatizados)
 
 ## Estrutura do projeto
 
 
 Projeto
+- e2e => Testes automatizados
+  - actions => Ações referente as telas
+  - flows => Fluxos de testes
+  - screens => Telas e seus componentes
 - packages
   - [core =>](https://github.com/marcelochb/poc-rn-microfront-core) Microfont com a regra de negócio (clean, testes unitários e estado global).
   - [interfaces =>](https://github.com/marcelochb/poc-rn-microfront-interfaces) Package-Tool com as interfaces de comunicação entre microfronts.
@@ -45,3 +51,10 @@ Rodar Android
 Rodar iOS
 - `cd ios && pod install && cd ..`
 - `npx react-native run-ios`
+
+### Como rodar os teste automatizados
+- `detox build --configuration ios.sim.debug`
+- `detox test --configuration ios.sim.debug`
+
+### Como rodar os teste de unidade
+- `yarn test`
