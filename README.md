@@ -10,6 +10,7 @@
 - Axios
 - Jest (teste de unidade)
 - Detox (testes automatizados)
+- Redux
 
 ## Estrutura do projeto
 
