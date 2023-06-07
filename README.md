@@ -48,6 +48,10 @@ git clone --recursive -j8 https://github.com/marcelochb/poc-rn-microfront-main.g
 ```bash
 yarn && npx lerna bootstrap
 ```
+- Instalando e Iniciando Json Server
+```bash
+brew install json-server && json-server --watch db.json
+```
 - Rodar Android
 ```bash
 yarn android
