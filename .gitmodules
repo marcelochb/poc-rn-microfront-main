@@ -1,0 +1,24 @@
+[submodule "core"]
+	path = packages/core
+	url = https://github.com/marcelochb/poc-rn-microfront-core.git
+[submodule "interfaces"]
+	path = packages/interfaces
+	url = https://github.com/marcelochb/poc-rn-microfront-interfaces.git
+[submodule "templates"]
+	path = packages/templates
+	url = https://github.com/marcelochb/poc-rn-microfront-templates.git
+[submodule "theme"]
+	path = packages/theme
+	url = https://github.com/marcelochb/poc-rn-microfront-theme.git
+[submodule "ui"]
+	path = packages/ui
+	url = https://github.com/marcelochb/poc-rn-microfront-ui.git
+[submodule "loan"]
+	path = packages/loan
+	url = https://github.com/marcelochb/poc-rn-microfront-loan.git
+[submodule "payment"]
+	path = packages/payment
+	url = https://github.com/marcelochb/poc-rn-microfront-payment.git
+[submodule "pix"]
+	path = packages/pix
+	url = https://github.com/marcelochb/poc-rn-microfront-pix.git

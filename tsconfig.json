@@ -5,7 +5,7 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "commonjs",
-    "types": ["react-native", "jest"],
+    "types": ["react-native", "jest","reflect-metadata"],
     "lib": [
       "es2019"
     ],
