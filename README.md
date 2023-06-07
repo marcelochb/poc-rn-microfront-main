@@ -1,6 +1,10 @@
 # [POC] React Native com Microfronts, Clean Architectures, Testes de unidade e Testes integrados
   Com o objetivo de paralelizar e facilitar a organização de grandes projetos para aplicações mobile, foi criado um POC (prove of concept) com uma aplicação principal, microfronts de jornadas dos modulos (pagamentos, empréstimo e pix) e packages de ferramentas para auxiliar na infraestrutura.
 
+Demo:
+
+![iOS Demo App](demo.gif)
+
 ### Tecnologias usadas
 
 - React Native
@@ -12,10 +16,8 @@
 - Detox (testes automatizados)
 - Redux
 
-## Estrutura do projeto
+### Estrutura do projeto
 
-
-Projeto
 - e2e => Testes automatizados
   - actions => Ações referente as telas
   - flows => Fluxos de testes
